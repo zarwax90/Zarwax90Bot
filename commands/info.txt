@@ -1,0 +1,101 @@
+module.exports = (client, message, args, guild, channel) => {
+    // New Salons
+    const newGeneral = message.guild.channels.cache.get("731832892316975121");
+    newDetenteG = message.guild.channels.cache.get("731832892316975122");
+    newConference = message.guild.channels.cache.get("731832892316975123");
+
+    newSio1 = message.guild.channels.cache.get("731832892463775758");
+    newSio1Slam = message.guild.channels.cache.get("731832892463775759");
+    newSio1Sisr = message.guild.channels.cache.get("731832892463775760");
+    newDetenteSio1 = message.guild.channels.cache.get("731832892463775761");
+    newDetenteSio1Slam = message.guild.channels.cache.get("731832892656975942");
+    newDetenteSio1Sisr = message.guild.channels.cache.get("731832892656975943");
+
+    newSio2 = message.guild.channels.cache.get("731832892656975948");
+    newSio2Slam = message.guild.channels.cache.get("731832892656975949");
+    newSio2Sisr = message.guild.channels.cache.get("731832892656975950");
+    newDetenteSio2 = message.guild.channels.cache.get("731832892656975951");
+    newDetenteSio2Slam = message.guild.channels.cache.get("731832892837331004");
+    newDetenteSio2Sisr = message.guild.channels.cache.get("731832892837331005");
+
+    newAnciens = message.guild.channels.cache.get("731832893013360644");
+    newTeacher = message.guild.channels.cache.get("731832892837331010");
+
+    // Anciens Salons
+    general = message.guild.channels.cache.get("731832891134443599");
+    detenteG = message.guild.channels.cache.get("731832890962477095");
+    conference = message.guild.channels.cache.get("731832891637628940");
+
+    Sio1 = message.guild.channels.cache.get("731832891323056198");
+    sio1Slam = message.guild.channels.cache.get("731832891323056200");
+    sio1Sisr = message.guild.channels.cache.get("731832891323056202");
+    detenteSio1 = message.guild.channels.cache.get("731832891134443590");
+    detenteSio1Slam = message.guild.channels.cache.get("731832891134443593");
+    detenteSio1Sisr = message.guild.channels.cache.get("731832891134443594");
+
+    Sio2 = message.guild.channels.cache.get("731832891323056199");
+    sio2Slam = message.guild.channels.cache.get("731832891323056203");
+    sio2Sisr = message.guild.channels.cache.get("731832891323056204");
+    detenteSio2 = message.guild.channels.cache.get("731832891134443591");
+    detenteSio2Slam = message.guild.channels.cache.get("731832891134443595");
+    detenteSio2Sisr = message.guild.channels.cache.get("731832891134443596");
+
+    Teacher = message.guild.channels.cache.get("731832892316975114");
+    anciens = message.guild.channels.cache.get("731832891134443597");
+
+    // Rôles
+    admin = message.guild.roles.cache.get("731832890463092796");
+    profAdmin = message.guild.roles.cache.get("731832890459160644");
+    prof = message.guild.roles.cache.get("731832890459160643");
+    intervenant = message.guild.roles.cache.get("731832890459160642");
+    sio1 = message.guild.roles.cache.get("731832890459160639");
+    slam1 = message.guild.roles.cache.get("731832890459160638");
+    sisr1 = message.guild.roles.cache.get("731832890459160637");
+    sio2 = message.guild.roles.cache.get("731832890459160636");
+    slam2 = message.guild.roles.cache.get("731832890446446611");
+    sisr2 = message.guild.roles.cache.get("731832890446446610");
+    diplome = message.guild.roles.cache.get("731832890446446608");
+    new_member = message.guild.roles.cache.get("731832890433994776");
+    muted = message.guild.roles.cache.get("731832890433994775");
+    botLevel2 = message.guild.roles.cache.get("731832890433994778");
+    permissionVocaux = message.guild.roles.cache.get("731832890438189152");
+    redoublant = message.guild.roles.cache.get("731832890446446603");
+    everyone = message.guild.roles.cache.get("731832890433994774");
+
+    // New Salons Vocaux
+    newRecre = message.guild.channels.cache.get("731832892463775752");
+    newClasseSio1Sio2 = message.guild.channels.cache.get("731832892463775753");
+    newSalle55 = message.guild.channels.cache.get("731832892463775754");
+    newSalleConference = message.guild.channels.cache.get("731832892463775755");
+    newAFK = message.guild.channels.cache.get("731832892463775756");
+
+    newClasseSio1 = message.guild.channels.cache.get("731832892656975944");
+    newClasseSio1Sisr = message.guild.channels.cache.get("731832892656975945");
+    newClasseSio1Slam = message.guild.channels.cache.get("731832892656975946");
+
+    newClasseSio2 = message.guild.channels.cache.get("731832892837331006");
+    newClasseSio2Sisr = message.guild.channels.cache.get("731832892837331007");
+    newClasseSio2Slam = message.guild.channels.cache.get("731832892837331008");
+
+    newProfesseurs = message.guild.channels.cache.get("731832892837331011");
+    newReunion = message.guild.channels.cache.get("731832892837331012");
+
+    // Anciens Salons Vocaux
+    recre = message.guild.channels.cache.get("731832891637628941");
+    classeSio1Sio2 = message.guild.channels.cache.get("731832891637628942");
+    salle55 = message.guild.channels.cache.get("731832891834630145");
+    salleConference = message.guild.channels.cache.get("731832891834630146");
+    afk = message.guild.channels.cache.get("731832891834630150");
+
+    classeSio1 = message.guild.channels.cache.get("731832891637628943");
+    classeSio1Sisr = message.guild.channels.cache.get("731832891637628944");
+    classeSio1Slam = message.guild.channels.cache.get("731832891637628945");
+
+    classeSio2 = message.guild.channels.cache.get("731832891637628946");
+    classeSio2Sisr = message.guild.channels.cache.get("731832891834630144");
+    classeSio2Slam = message.guild.channels.cache.get("731832891637628947");
+
+    Professeurs = message.guild.channels.cache.get("731832891834630147");
+    Reunion = message.guild.channels.cache.get("731832891834630148");
+    Admin = message.guild.channels.cache.get("731832891834630149");
+}
